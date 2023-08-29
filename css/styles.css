@@ -218,20 +218,25 @@ nav a:hover {
   flex-shrink: 0;
   width: 200px;
   padding: 30px;
-  animation: carousel infinite linear 2s;
+  animation: carousel infinite linear 16s;
 }
 
-@keyframes carousel{
-  0%   { transform: translate3d(0, 0, 0); }
-  10%   { transform: translate3d(-200px, 0, 0); }
-  20%   { transform: translate3d(-400px, 0, 0); }
-  30%   { transform: translate3d(-600px, 0, 0); }
-  40%   { transform: translate3d(-800px, 0, 0); }
-  50%   { transform: translate3d(-1000px, 0, 0); }
-  60%   { transform: translate3d(-1200px, 0, 0); }
-  70%   { transform: translate3d(-1400px, 0, 0); }
-  80%   { transform: translate3d(-1600px, 0, 0); }
-  90%   { transform: translate3d(-1800px, 0, 0); }
+@keyframes carousel {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(-1400px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-1400px, 0, 0);
+  }
+  75%{
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 footer {
@@ -273,6 +278,7 @@ footer section ul {
   margin: 0;
   font-size: inherit;
 }
+
 .site-info a {
   font-size: inherit;
 }
